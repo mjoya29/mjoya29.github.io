@@ -87,6 +87,7 @@ header img{
 
 body{
     background-color: #cde9e6;
+    margin-bottom: 1em;
 }
 
 article{
@@ -101,12 +102,12 @@ p{
 }
 
 footer{
-    font-weight: 550;
     text-align: right;
     padding-top: 2em;
     padding-bottom: 2em;
-
 }
+
+/* LIST TAGS */
 
 ul li{
     text-align: left;
@@ -119,6 +120,8 @@ ul{
     padding-left: 1em;
     padding-bottom: 1em;
 }
+
+/* LIST TAGS CLOSE */
 
 html{
     margin-left: 20em;
@@ -140,7 +143,6 @@ nav{
 
 nav li{
     display: inline;
-    text-decoration: none;
 }
 
 nav li a{
