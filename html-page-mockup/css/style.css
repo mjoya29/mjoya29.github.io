@@ -176,7 +176,6 @@ footer p{
 
 /* ABOUT US DIVS START */
 .About-Us{
-    padding: 15px;
     background-color: #ffe6ac;
 }
 
@@ -185,11 +184,13 @@ footer p{
     font-weight: bold;
     padding-top: 20px;
     padding-bottom:15px;
+    padding-left: 15px;
 }
 
 .About-Us p{
     padding-top: 5px;
     padding-bottom: 15px;
+    padding-left: 15px;
 }
 
 .About-Us img{
@@ -352,7 +353,7 @@ footer p{
 }
 .Our-Vision button{
     font-size: 20px;
-    background-color: rgba(34, 34, 34, 0.603);
+    background-color: rgba(34, 34, 34, 0.479);
     color: white;
     margin: 15px;
     padding: 30px;
@@ -373,6 +374,11 @@ footer p{
 .Our-Team{
     padding: 15px;
 }
+
+.Our-Team h2{
+    padding-left: 0px;
+}
+
 .ot{
     background-color: #ffe6ac;
     padding-bottom: 10px;
@@ -387,6 +393,10 @@ footer p{
 /* CONTACT US DIVS START */
 .Contact-Us{
     padding: 15px;
+}
+
+.Contact-Us h2{
+    padding-left: 0px;
 }
 
 .contact-title{
@@ -427,6 +437,10 @@ footer p{
 }
 /* CONTACT US ENDS */
 
+.map iframe{
+    width: 100%;
+}
+
 /* MEDIA QUERY START */
 
 @media screen and (min-width: 760px){
@@ -445,14 +459,9 @@ footer p{
     .logo{
         margin-top: 15px;
         padding-left: 200px;
-        padding-right: 40px;
+        padding-right: 50px;
         background-color: #222;
         float: left;
-    }
-
-    .bg{
-        margin-left: auto;
-        margin-right: auto; 
     }
 
     nav li{
@@ -467,12 +476,14 @@ footer p{
     .active{
         background-color:#c78c06;
     }
+
     header form{
         margin-top: 45px;
         float: left;
     }
 
     header form input{
+        margin-left: 10px;
         padding: 7px;
     }
     header form button{
@@ -487,13 +498,90 @@ footer p{
     }
 
     .banner-content{
-        margin-left: 230px;
-        margin-right: 230px;
-        padding:45px;
+        padding: 100px;
+        padding-bottom: 20px;
     }
 
-    .site-title{
-        font-size: 50px;
+    .banner-content h1{
+        line-height: 150px;
+        font-size: 90px;
+        text-align: left;
+        padding-right: 100px;
+    }
+    .banner-button{
+        padding: 30px;
+        margin-top: 40px;
+    }
+    .Welcome-Page{
+        padding: 80px;
+        background-position:center;
+    }
+
+    .About-Us{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas:
+        "img h2"
+        "img p"
+    }
+
+    .About-Us img{
+        grid-area: img;
+    }
+
+    .About-Us h2{
+        margin-left: 15px;
+        grid-area: h2;
+    }
+
+    .About-Us p{
+        padding: 15px;
+        grid: p;
+    }
+
+    .os-title{
+        padding-top: 50px;
+        padding-left: 250px;
+    }
+    .Our-Services{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 15px;
+        margin-left: 250px;
+        margin-right: 250px;
+        grid-template-areas:
+        "dt dt dt mc mc mc"
+        "vp vp wd wd ps ps"
+    }
+
+    .dt{
+        grid-area: dt;
+    }
+
+    .mc{
+        grid-area: mc;
+    }
+
+    .vp{
+        grid-area: vp;
+    }
+
+    .wd{
+        grid-area: wd;
+    }
+
+    .ps{
+        grid-area: ps;
+    }
+
+    .Our-Vision{
+        background-position: center ;
+        padding-left: 250px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 200px;
     }
 }
 
