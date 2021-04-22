@@ -385,6 +385,12 @@ footer p{
     margin-bottom: 15px;
 }
 
+.ot2{
+    background-color: #ffe6ac;
+    padding-bottom: 11px;
+    margin-bottom: 15px;
+}
+
 .ot p{
     padding: 15px;
 }
@@ -546,7 +552,7 @@ footer p{
 
     .About-Us p{
         margin-left: 10px;
-        grid: p;
+        grid-area: p;
     }
 
     .os-title{
@@ -591,6 +597,65 @@ footer p{
         padding-top: 50px;
         padding-bottom: 50px;
         padding-right: 200px;
+    }
+
+    .ot-title{
+        font-size: 60px;
+        font-weight: bold;
+        padding-top: 50px;
+        padding-left: 260px;
+    }
+
+    .Our-Team{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        margin-left: 250px;
+        margin-right: 250px;
+        grid-template-areas:
+        "ot-img ot"
+        "ot2 ot-img2"
+    }
+
+    .ot{
+        grid-area: ot;
+    }
+
+    .ot2{
+        grid-area: ot2;
+    }
+
+    .ot-img{
+        grid-area: ot-img;
+    }
+
+    .ot-img2{
+        background-color: #ffe6ac;
+        grid-area: ot-img2;
+    }
+
+    .Contact-Us{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 0.25fr;
+        grid-gap: 15px;
+        margin-left: 250px;
+        margin-right: 250px;
+        grid-template-areas:
+        "section map"
+        "Hours Hours"
+    }
+
+    .section{
+        grid-area: section;
+    }
+
+    .map{
+        grid-area: map;
+    }
+
+    .Hours{
+        grid-area: Hours;
     }
 }
 
