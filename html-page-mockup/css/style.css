@@ -362,7 +362,9 @@ footer p{
 .Our-Vision button span{
     padding:10px;
 }
+/* OUR VISION END */
 
+/* OUR TEAM START */
 .Our-Team img{
     width: 100%;
     height: auto;
@@ -380,6 +382,7 @@ footer p{
 .ot p{
     padding: 15px;
 }
+/* OUR TEAM ENDS */
 
 /* CONTACT US DIVS START */
 .Contact-Us{
@@ -422,3 +425,75 @@ footer p{
 .Hours table{
     border-collapse: collapse;
 }
+/* CONTACT US ENDS */
+
+/* MEDIA QUERY START */
+
+@media screen and (min-width: 760px){
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+    header{
+        background-color: #222;
+        padding: 30px
+    }
+    
+    .logo{
+        margin-top: 15px;
+        padding-left: 200px;
+        padding-right: 40px;
+        background-color: #222;
+        float: left;
+    }
+
+    .bg{
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    nav li{
+        font-size: 18px;
+        float: left;
+        display: inline;
+        padding:25px;
+        margin-top: 40px;
+
+    }
+
+    .active{
+        background-color:#c78c06;
+    }
+    header form{
+        margin-top: 45px;
+        float: left;
+    }
+
+    header form input{
+        padding: 7px;
+    }
+    header form button{
+        position:absolute;
+        float: left;
+        border: solid 1px #c78c06;
+        height: 38px;
+        width: 38px;
+    }
+    header form i{
+        font-size: 20px;
+    }
+
+    .banner-content{
+        margin-left: 230px;
+        margin-right: 230px;
+        padding:45px;
+    }
+
+    .site-title{
+        font-size: 50px;
+    }
+}
+
